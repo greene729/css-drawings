@@ -4,7 +4,8 @@
     --light-white: rgba(255, 255, 255, 0.2);
     --white: rgb(255, 255, 255);
     --crayon-color: #237449;
-    --wrapper-color: rgba(41, 237, 133, .6)
+    --wrapper-color: rgba(41, 237, 133, .6);
+    --crayon-color-text: "green";
 }
 
 #canvas {
@@ -69,7 +70,7 @@
 }
 
 #crayon:after {
-    content: "green";
+    content: var(--crayon-color-text);
     position: absolute;
     left: 185px;
     width: 251px;
